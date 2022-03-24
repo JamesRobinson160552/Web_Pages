@@ -1,0 +1,35 @@
+html {
+	background:white;
+	font-family:Georgia;
+	font-size:200%;
+}
+
+body{
+	background-color:green;
+	margin:5%;
+	border:solid black 4px;
+
+}
+
+img{
+	height:50%;
+	width:30%;
+	float:left;
+}
+
+div{
+	padding-bottom:10%;
+	padding-top:10%;
+	display:none;
+	border:solid black 4px;
+	margin:10%;
+	text-align:center;
+}
+
+input{
+	border:solid black 3px;
+}
+
+#first_field{
+	display:block;
+}

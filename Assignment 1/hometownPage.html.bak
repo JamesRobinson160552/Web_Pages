@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head> 
+		<title> James' Pages </title> 
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<p class="navBar">
+			<a href="index.html">Home</a>
+			<a href="aboutMePage.html">About</a>
+			<a href="hometownPage.html">Hometown</a>
+		</p>
+		<h1>My Home</h1>
+		<p>I am from Truro, but I currently live on campus in Wolfville. Here is a picture of Truro.</p>
+		<img src="picOfTruro.png" alt="Truro" height="30%"width="80%" style="margin-bottom:0">
+		<p class="caption"><em>The photo quality matches the town</em></p>
+		<p>Let's compare Truro and Wolfville:</p>
+		<table>
+			<tr>
+				<th></th>
+				<th>Population</th>
+				<th>House Price</th>
+				<th>Unemployment</th>
+			</tr>
+			<tr>
+				<td>Truro</td>
+				<td>12 261</td>
+				<td>$179 668</td>
+				<td>10.6%</td>
+			</tr>
+			<tr>
+				<td>Wolfville</td>
+				<td>2 195</td>
+				<td>$314 332</td>
+				<td>15.3%</td>
+			</tr>
+		</table>
+		<p class="caption"><em>from townfolio.co</em></p>
+		<p>That's all - Thanks!</p>
+		<address>Created by James Robinson 100160552 for COMP 2513 Assignment 1/2</address>
+   </body>
+</html>

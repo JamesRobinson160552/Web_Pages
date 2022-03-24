@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>MadLibs</title>
+		<meta charset = "UTF-8">
+		<link rel = "stylesheet" href = "styles.css"></link>
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+		<h1>MadLibs</h1>
+		<h2>Enter something for each of the prompts to make a story!</h2>
+		<div id = "first_field">
+			<label for = "name"  title = "What should the main character be called?">Character Name:</label>
+			<br><br>
+			<input type = "text" id = "name" name = "name"><br>
+			<button id = "name_submit" onclick = "nameSubmit()">Done</button>
+		</div>
+		
+		<div id = "second_field">
+			<label for = "adjective" title = "Adjective: a description word">An Adjective:</label>
+			<br><br>
+			<input type = "text" id = "adjective" name = "adjective"><br>
+			<button id = "adjectiveSubmit" onclick = "adjectiveSubmit()">Done</button>
+		</div>
+		
+		<div id = "third_field">
+			<label for = "animal" title = "You know what an animal is">An Animal:</label>
+			<br><br>
+			<input type = "text" id = "animal" name = "animal"><br>
+			<button id = "animalSubmit" onclick = "animalSubmit()">Done</button>
+		</div>
+		
+		<div id = "fourth_field">
+			<label for = "silly_name" title = "A funny little word or two">A Silly Name:</label>
+			<br><br>
+			<input type = "text" id = "silly_name" name = "silly_name"><br>
+			<button id = "sillySubmit" onclick = "sillySubmit()">Done</button>
+		</div>
+		
+		<div id = "fifth_field">
+			<label for = "food" title = "A yummy treat">Food:</label>
+			<br><br>
+			<input type = "text" id = "food" name = "food"><br>
+			<button id = "foodSubmit" onclick = "foodSubmit()">Done</button>
+		</div>
+		
+		<div id = "sixth_field">
+			<label for = "number" title = "Any number">A Number:</label>
+			<br><br>
+			<input type = "text" id = "number" name = "number"><br>
+			<button id = "numberSubmit" onclick = "numberSubmit()">Done</button>
+		</div>
+		
+		<div id = "seventh_field">
+			<label for = "emotion" title = "A feeling you might have">An Emotion:</label>
+			<br><br>
+			<input type = "text" id = "emotion" name = "emotion"><br>
+			<button id = "emotionSubmit" onclick = "emotionSubmit()">Done</button>
+		</div>
+		
+		<div id = "eigth_field">
+			<label for = "price" title = "The cost of something">Another Number:</label>
+			<br><br>
+			<input type = "text" id = "price" name = "price"><br>
+			<button id = "priceSubmit" onclick = "priceSubmit()">Done</button>
+		</div>
+		
+		<div id = "ninth_field">
+			<p>Pick a size:</p>
+			<input type="radio" id="big" name="size" value="big">
+			<label for="big">BIG</label><br>
+			<input type="radio" id="small" name="size" value="small">
+			<label for="small">small</label><br>  
+			<button id = "sizeSubmit" onclick = "sizeSubmit()">Done</button>
+		</div>
+		
+		<p id = "story"></p>
+		
+		<br><br>
+		<footer>Created by James Robinson 100160552 for COMP 2513 Assignment 3</footer>
+	</body>
+</html>
