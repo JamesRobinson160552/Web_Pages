@@ -91,10 +91,39 @@ app.post('api/customers/:customer_id', (req, res) => {
 })
 
 //Update Order info
+app.post('api/orders/:order_id', (req, res) => {
+    var order_id = req.params.order_id;
+    var update_data = {$set: req.body};
+    order_collection.updateone({"order_id":order_id}, update_data, function(error, result) {
+        if (error){
+            return res.status(500).send(error);
+        }
+        res.send(result.result);
+    });
+})
 
 //Delete Customer
+app.delete('api/customers/:customer_id', (req, res) => {
+    var customer_id = req.params.customer_id;
+    customer_collection.delete({"customer_id":customer_id}, (error, result) => {
+        if (error){
+            return res.status(500).send(error);
+        }
+        res.send(result);
+    });
+})
+
 
 //Delete Order
+app.delete('api/orders/:order_id', (req, res) => {
+    var order_id = req.params.order_id;
+    order_collection.delete({"order_id":order_id}, (error, result) => {
+        if (error){
+            return res.status(500).send(error);
+        }
+        res.send(result);
+    })
+})
 
 //Set up database connection
 app.listen(8080, () => {
