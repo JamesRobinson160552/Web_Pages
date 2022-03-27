@@ -59,7 +59,7 @@ app.get('/api/orders/:order_id', (req, res) => {
 })
 
 //Create new Customer
-app.post('/api/customer', (req, res) => {
+app.post('/api/customers', (req, res) => {
     customer_collection.insert(req.body, (error, result) => {
         if (error){
             return res.status(500).send(error);
