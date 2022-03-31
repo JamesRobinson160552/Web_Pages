@@ -1,0 +1,10 @@
+COMP 2513 Winter 2022
+James Robinson 160552@acadiau.ca
+
+Final Project Proposal
+    Using MongoDB, Express, Vue, and Node, create an API which can create, 
+    retrieve, update, and delete entries in a plant registry database.
+    
+    The API will access collections to track all the plants in a garden and
+    manage information like species, number, age, expected bloom date, and
+    water and fertilizer requirements.
